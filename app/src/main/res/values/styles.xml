@@ -8,4 +8,21 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TextHint" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="CounterText" parent="TextAppearance.Design.Counter">
+        <item name="android:textColor">@color/colorTernary</item>
+    </style>
+
+    <style name="CounterOverflow" parent="TextAppearance.Design.Counter.Overflow">
+        <item name="android:textColor">@color/colorDanger</item>
+    </style>
+
+    <style name="ErrorText" parent="TextAppearance.Design.Error">
+        <item name="android:textColor">@color/colorDanger</item>
+    </style>
+
 </resources>

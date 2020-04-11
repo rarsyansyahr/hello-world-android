@@ -29,28 +29,53 @@
             android:textSize="20sp"
             android:layout_marginBottom="40dp"/>
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtNim"
-            android:inputType="text"
-            android:layout_marginBottom="5dp"
-            android:textAlignment="center"
-            android:hint="NIM (18.11.0153)"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"/>
-
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtPassword"
-            android:inputType="textPassword"
+            android:id="@+id/inlayNim"
+            app:hintAnimationEnabled="true"
+            app:counterEnabled="true"
+            app:counterMaxLength="8"
             android:layout_marginBottom="10dp"
-            android:textAlignment="center"
-            android:hint="Password (if18s)"
+            android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"/>
+            app:hintTextAppearance="@style/TextHint"
+            app:counterTextAppearance="@style/CounterText"
+            app:counterOverflowTextAppearance="@style/CounterOverflow"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/ErrorText">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:digits="1234567890"
+                android:id="@+id/txtNim"
+                android:hint="NIM (18110153)"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inlayPassword"
+            app:passwordToggleEnabled="true"
+            app:hintAnimationEnabled="true"
+            app:counterEnabled="true"
+            app:counterMaxLength="5"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:hintTextAppearance="@style/TextHint"
+            app:counterTextAppearance="@style/CounterText"
+            app:counterOverflowTextAppearance="@style/CounterOverflow"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/ErrorText">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:id="@+id/txtPassword"
+                android:hint="Password (if18s)"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:layout_width="match_parent"
