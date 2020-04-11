@@ -50,7 +50,8 @@
                 android:inputType="number"
                 android:digits="1234567890"
                 android:id="@+id/txtNim"
-                android:hint="NIM (18110153)"/>
+                android:hint="NIM (18110153)"
+                android:text="18110153"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -72,9 +73,11 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
+                android:inputType="textPassword|textNoSuggestions"
                 android:id="@+id/txtPassword"
-                android:hint="Password (if18s)"/>
+                android:imeOptions="actionGo"
+                android:hint="Password (if18s)"
+                android:text="if18s"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button

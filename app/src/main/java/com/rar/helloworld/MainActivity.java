@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 String password = txtPassword.getText().toString();
                 String text = "";
 
-                if (nim.equals(nim) && password.equals(password)) {
+                if (nim.equals(nim) == true && password.equals(password) == true) {
                     text = "Login Berhasil !";
                     String nama = "Rizky AR";
 

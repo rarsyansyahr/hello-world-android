@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Document Tracking</string>
+
+    <string-array name="jurusan">
+        <item>Teknik Informatika</item>
+        <item>Teknologi Informasi</item>
+        <item>Sistem Informasi</item>
+    </string-array>
 </resources>
